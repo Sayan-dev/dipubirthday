@@ -1,2 +1,2 @@
-# dipubirthday.github.io
+# DipuBirthday
 Celebrating Depanwita's Birthday
