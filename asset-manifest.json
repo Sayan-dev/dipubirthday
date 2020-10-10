@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dipubirthday/static/css/main.cafd0e6c.chunk.css",
-    "main.js": "/dipubirthday/static/js/main.64692b51.chunk.js",
-    "main.js.map": "/dipubirthday/static/js/main.64692b51.chunk.js.map",
+    "main.js": "/dipubirthday/static/js/main.7b137afc.chunk.js",
+    "main.js.map": "/dipubirthday/static/js/main.7b137afc.chunk.js.map",
     "runtime-main.js": "/dipubirthday/static/js/runtime-main.41383060.js",
     "runtime-main.js.map": "/dipubirthday/static/js/runtime-main.41383060.js.map",
     "static/js/2.aed87ffa.chunk.js": "/dipubirthday/static/js/2.aed87ffa.chunk.js",
     "static/js/2.aed87ffa.chunk.js.map": "/dipubirthday/static/js/2.aed87ffa.chunk.js.map",
     "index.html": "/dipubirthday/index.html",
-    "precache-manifest.ca612b7fdd4d88cd9b154c4030142773.js": "/dipubirthday/precache-manifest.ca612b7fdd4d88cd9b154c4030142773.js",
+    "precache-manifest.397793290644236a3a0a7004b97b7dc3.js": "/dipubirthday/precache-manifest.397793290644236a3a0a7004b97b7dc3.js",
     "service-worker.js": "/dipubirthday/service-worker.js",
     "static/css/main.cafd0e6c.chunk.css.map": "/dipubirthday/static/css/main.cafd0e6c.chunk.css.map",
     "static/js/2.aed87ffa.chunk.js.LICENSE.txt": "/dipubirthday/static/js/2.aed87ffa.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.41383060.js",
     "static/js/2.aed87ffa.chunk.js",
     "static/css/main.cafd0e6c.chunk.css",
-    "static/js/main.64692b51.chunk.js"
+    "static/js/main.7b137afc.chunk.js"
   ]
 }
