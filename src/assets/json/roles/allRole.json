@@ -1,0 +1,63 @@
+{
+    "statusCode": 0,
+    "message": "success",
+    "masterData": [
+      {
+        "roleID": "20208300518393K2MIQ2CZ4W0001",
+        "roleCode": "RO0335",
+        "roleName": "Organizer",
+        "orgCode": "OR0289",
+        "isActive": null
+      },
+      {
+        "roleID": "20208300819451KOJFHC82YR0001",
+        "roleCode": "RO0337",
+        "roleName": "HR",
+        "orgCode": "OR0289",
+        "isActive": null
+      },
+      {
+        "roleID": "20208300826173FZ5M0BNJ5M0001",
+        "roleCode": "RO0338",
+        "roleName": "Admin",
+        "orgCode": "OR0289",
+        "isActive": null
+      },
+      {
+        "roleID": "2020830083791LF9UXBVED90001",
+        "roleCode": "RO0336",
+        "roleName": "Manager",
+        "orgCode": "OR0289",
+        "isActive": null
+      },
+      {
+        "roleID": "20209755521640Z9KUJYLJ580001",
+        "roleCode": "RO0588",
+        "roleName": "Role ",
+        "orgCode": "OR0289",
+        "isActive": null
+      },
+      {
+        "roleID": "2020979414333D3V1GX9CFZ0001",
+        "roleCode": "RO0595",
+        "roleName": "Rolenew",
+        "orgCode": "OR0289",
+        "isActive": null
+      },
+      {
+        "roleID": "20209798556733EY8GXHPGC0001",
+        "roleCode": "RO0596",
+        "roleName": "role",
+        "orgCode": "OR0289",
+        "isActive": null
+      },
+      {
+        "roleID": "202099106558565ZQPA027ZQ0001",
+        "roleCode": "RO0605",
+        "roleName": "qqq",
+        "orgCode": "OR0289",
+        "isActive": null
+      }
+    ]
+  }
+  

@@ -1,0 +1,1278 @@
+{
+	"info": {
+		"_postman_id": "b828f063-2673-4012-90ed-6f4a12cd58fa",
+		"name": "Track4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createRoleSet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userCode\":\"US0047\",\r\n    \"roleCode\":\"RO0043\",\r\n    \"orgCode\":\"OR0030\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/roleSet/createRoleSet",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"roleSet",
+						"createRoleSet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAccessedMenu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/getAccessedMenu/US0325",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"getAccessedMenu",
+						"US0325"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/getAllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"getAllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create agent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"agentID\":\"1\",\r\n    \"name\":\"prasenjit\",\r\n    \"userCode\":\"ABCD1023\",\r\n    \"country\":\"IN\",\r\n    \"column1\":\"Kolkata\",\r\n    \"column2\":\"Khardaha\",\r\n    \"column3\":\"WB\",\r\n    \"phoneNumber\":\"8420431159\",\r\n    \"alternativePhoneNumber\":\"8617752699\",\r\n    \"email\":\"prasenjit95.khardah@gmail.com\",\r\n    \"alternativeEmail\":\"prasenjit2012.khardah@gmail.com\",\r\n    \"taxID\":\"ASDF4587\",\r\n    \"licenseCode\":\"LIC1234\",\r\n    \"ein\":\"EN4587\",\r\n    \"createdBy\":\"12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9096/agent/createAgent",
+					"host": [
+						"localhost"
+					],
+					"port": "9096",
+					"path": [
+						"agent",
+						"createAgent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAccessRight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"menuCode\":\"ME0060\",\r\n    \"roleCode\":\"RO0044\",\r\n    \"orgCode\":\"OR0030\",\r\n    \"canCreate\":1,\r\n    \"canRead\":1,\r\n    \"canUpdate\":1,\r\n    \"canDelete\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/accessRight/createAccessRight",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"accessRight",
+						"createAccessRight"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Active inactive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:9099/user/activateAndDeactiveByUser?userID=USR1&status=Disable",
+					"host": [
+						"localhost"
+					],
+					"port": "9099",
+					"path": [
+						"user",
+						"activateAndDeactiveByUser"
+					],
+					"query": [
+						{
+							"key": "userID",
+							"value": "USR1"
+						},
+						{
+							"key": "status",
+							"value": "Disable"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/getUser/202081543735658YYMQ77EZ1R001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"getUser",
+						"202081543735658YYMQ77EZ1R001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb25Db3VudHJ5IjoiQ08wMDAxIiwic3ViIjoic2F5YW50YTEyMyIsIm9yZ05hbWUiOiJTQkkgR2VuZXJhbCIsIm9yZ2NvZGUiOiJPUjAyODkiLCJpYXQiOjE1OTk2NDYwMjgsInVzZXJDb2RlIjoiVVMwNjI2IiwidXNlcm5hbWUiOiJzYXlhbnRhMTIzIn0.X2qBqaFamGo9k-si2drUb-PYQqhe7Ygun_feC93HZtA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/user/getAllUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"getAllUser"
+					]
+				},
+				"description": "        "
+			},
+			"response": []
+		},
+		{
+			"name": "Get state by country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9095/master/state/getAllStateByCountryCode?countryCode=IN",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"master",
+						"state",
+						"getAllStateByCountryCode"
+					],
+					"query": [
+						{
+							"key": "countryCode",
+							"value": "IN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all country",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb25Db3VudHJ5IjoiQ08wMDAxIiwic3ViIjoic2F5YW50YTEyMyIsIm9yZ05hbWUiOiJTQkkgR2VuZXJhbCIsIm9yZ2NvZGUiOiJPUjAyODkiLCJpYXQiOjE1OTk2NDYwMjgsInVzZXJDb2RlIjoiVVMwNjI2IiwidXNlcm5hbWUiOiJzYXlhbnRhMTIzIn0.X2qBqaFamGo9k-si2drUb-PYQqhe7Ygun_feC93HZtA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/master/country/getAllCountry",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"country",
+						"getAllCountry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9095/master/code/getCodeType?codeType=BloodGroup",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"master",
+						"code",
+						"getCodeType"
+					],
+					"query": [
+						{
+							"key": "codeType",
+							"value": "BloodGroup"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roleName\":\"USER\",\r\n    \"orgCode\":\"OR0030\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/role/createRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"role",
+						"createRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Menu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"HR Details\",\r\n\t\"menuModule\":\"Administration\",\r\n    \"parentId\":\"202081704942686PBMU0RWC5E0001\" ,\r\n    \"orgId\":\"OR0030\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/menu/createMenu",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"menu",
+						"createMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get menus of Organization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/master/menu/getAllMenu/OR0289",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"menu",
+						"getAllMenu",
+						"OR0289"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all role of organization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/master/role/getAllRole/OR0030",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"role",
+						"getAllRole",
+						"OR0030"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"sayanta123\",\r\n    \"password\":\"c2Jp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/authentication/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authentication",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userDetails",
+							"value": "{\n   \"prefix\":\"Mr.\",\n   \"firstName\":\"Saugata\",\n   \"lastName\":\"Mitra\",\n   \"suffix\":\"Choudhary\",\n   \"dateOfBirth\":\"1999-02-20\",\n   \"birthCountry\":\"CO0001\",\n   \"birthState\":\"ST0004\",\n   \"gender\":\"CO0028\",\n   \"bloodGroup\":\"CO0026\",\n   \"displayName\":\"t.chow\",\n   \"idProofCategory\":\"AA\",\n\t\"idProofNumber\":\"12545878\",\n\t\"addressProofCategory\":\"AAAA\",\n\t\"addressProofNumber\":\"4547874787\",\n   \"ein\":\"663as\",\n   \"userCredentialText\":\"6222\",\n   \"aliasPrefix\":\"CO0021\",\n   \"aliasFirstName\":\"Anil\",\n   \"aliasMiddleName\":\"prasad\",\n   \"aliasLastName\":\"choudhary\",\n   \"aliasSuffix\":\"\",\n   \"licenseCode\":\"lic123\",\n   \"taxID\":\"tAX12\",\n   \"enumerationDate\":\"1999-02-20\",\n   \"photoPath\":\"https://www.google.com/\",\n   \"signaturePath\":\"https://www.google.com/\",\n   \"userName\":\"vikrant\",\n   \"password\":\"dmlrcmFudA==\",\n   \"userPrimaryAddressDetailsDTO\":{\n      \"country\":\"CO0001\",\n      \"column1\":\"kolkata\",\n      \"column2\":\"R.N Avenue\",\n      \"column3\":\"West Bengal\",\n      \"column5\":\"Kolkata\",\n      \"column6\":\"Bally\",\n      \"column7\":\"711963\"\n   },\n   \"userSecondaryAddressDetailsDTO\":{\n      \"country\":\"IN\",\n      \"column1\":\"74\",\n      \"column2\":\"nutanpally\",\n      \"column3\":\"West Bengal\",\n      \"column5\":\"Kolkata\",\n      \"column6\":\"Bally\",\n      \"column7\":\"711963\"\n   },\n   \"userContactDetailsDTO\":{\n      \"phoneNo\":[\n\t\t{\n\t\t\t\"phoneType\":\"Primary\",\n\t\t\t\"phoneNumber\":\"8520258520\"\n\t\t}\n\t  ],\n      \"email\":[\n\t\t{\n\t\t\t\"emailType\":\"primary\",\n\t\t\t\"emailId\":\"test52@test.com\"\n\t\t}\n\t  ],\n      \"contactPersonPrefix\":\"Mr.\",\n      \"contactPersonFirstName\":\"Nishant\",\n      \"contactPersonMiddleName\":\"Kumar\",\n      \"contactPersonLastName\":\"Choudhary\",\n      \"contactPersonSuffix\":\"Nisu\",\n      \"credentialText\":\"CredentialText\",\n      \"title\":\"Title\"\n   },\n   \"userEducationDetailsDTO\":{\n      \"yearOfPassing\":\"2015\",\n      \"university\":\"Calcutta University\",\n      \"specialization\":\"Computer\",\n      \"yearOfExperience\":\"5\",\n      \"experienceSummary\":\"Good in Knowledge\",\n      \"qualification\":\"MCA\",\n      \"otherQualification\":\"BCA\",\n      \"discipline\":\"good\",\n      \"college\":\"Seacom\",\n      \"registrationNo\":\"Reg13\"\n   }\n}",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Prasenjit Chowdhury/Pictures/Saved Pictures/image.jpg"
+						},
+						{
+							"key": "signature",
+							"type": "file",
+							"src": "/C:/Users/Prasenjit Chowdhury/Pictures/Saved Pictures/image.jpg"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/createUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Organization registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"orgName\": \"PCORG\",\r\n\"idParent\": \"1\",\r\n\"orgTypeCode\": \"GOOD\",\r\n\"orgAbbreviation\": \"Abb\",\r\n\"pinNo\": \"711205\",\r\n\"serviceTaxNo\": \"Ser123\",\r\n\"licenseNo\": \"LIC123\",\r\n\"licenseCountry\": \"India\",\r\n\"licenseState\": \"WB\",\r\n\"inaugurationDate\": \"2018-06-22\",\r\n\"inaugurationCountry\": \"India\",\r\n\"inaugurationState\": \"WB\",\r\n\"taxonomyCode\": \"TAM123\",\r\n\"npi\": \"NPI12\",\r\n\"otherNpi\": \"OTHNPI123\",\r\n\"enumerationDate\": \"2018-06-22\",\r\n\"logoPath\": \"/logo\",\r\n\"userName\": \"prasenjit\",\r\n\"password\": \"pc1234\",\r\n\"organizationAddress\":{\r\n\"country\":\"IN\",\r\n\"column1\":\"Address 1\",\r\n\"column2\":\"Address 2\",\r\n\"column3\":\"WB\",\r\n\"column4\":\"India\",\r\n\"column5\":\"Kolkata\",\r\n\"column6\":\"KP\",\r\n\"column7\":\"711896\"\r\n},\r\n\"organizationContactDetails\":{\r\n\"url\": \"/url\",\r\n\"phoneNo\": \"8617752699\",\r\n\"altrPhoneNo1\": \"123456\",\r\n\"altrPhoneNo2\": \"1234589\",\r\n\"altrPhoneNo3\": \"4563985\",\r\n\"fax\": \"Fax1\",\r\n\"altrFax\": \"AltFax\",\r\n\"email\": \"pc@gmail.com\",\r\n\"altrEmail\": \"aj2@gmail.com\",\r\n\"contactPersonPrefix\": \"Mr.\",\r\n\"contactPersonFirstName\": \"Ajay\",\r\n\"contactPersonMiddleName\": \"Kumar\",\r\n\"contactPersonLastName\": \"Choudhary\",\r\n\"contactPersonSuffix\": \"Suffix\",\r\n\"contactPersonPhone\": \"45666665\",\r\n\"contactPersonMobile\": \"8617752699\",\r\n\"contactPersonEmail\": \"pers@gmail.com\",\r\n\"openingTime\": \"12:30\",\r\n\"closingTime\": \"23:03\",\r\n\"breakStartTime\": \"12:20\",\r\n\"breakEndTime\": \"15:23\",\r\n\"weeklyHoliday\": \"Sunday\"\r\n\r\n}\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/organization/createOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"createOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllCountryMetadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9097/metadata/getAllByCountryCode?countryCode=CO0001",
+					"host": [
+						"localhost"
+					],
+					"port": "9097",
+					"path": [
+						"metadata",
+						"getAllByCountryCode"
+					],
+					"query": [
+						{
+							"key": "countryCode",
+							"value": "CO0001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a organization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/organization/getOrganizationByCode/OR0001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"getOrganizationByCode",
+						"OR0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update role",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roleName\":\"HRRUR\",\r\n    \"orgCode\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/role/updateRole/Role_977959677608",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"role",
+						"updateRole",
+						"Role_977959677608"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update menu",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Show Details\",\r\n\t\"menuModule\":\"Administration\",\r\n    \"parentId\":\"menu_810\" ,\r\n    \"orgId\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/menu/updateMenu/menu_953",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"menu",
+						"updateMenu",
+						"menu_953"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cityName\":\"Filadel2\",\r\n    \"stateCode\":\"ST0008\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/city/createCity",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"city",
+						"createCity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Country",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryName\":\"NORTH KORIA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/country/createCountry",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"country",
+						"createCountry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all orgaization",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb25Db3VudHJ5IjoiQ08wMDAxIiwic3ViIjoic2F5YW50YTEyMyIsIm9yZ05hbWUiOiJTQkkgR2VuZXJhbCIsIm9yZ2NvZGUiOiJPUjAyODkiLCJpYXQiOjE1OTk2NDYwMjgsInVzZXJDb2RlIjoiVVMwNjI2IiwidXNlcm5hbWUiOiJzYXlhbnRhMTIzIn0.X2qBqaFamGo9k-si2drUb-PYQqhe7Ygun_feC93HZtA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/organization/getAllOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"getAllOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create state",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stateName\":\"Filadelfia\",\r\n    \"countryCode\":\"CO0002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/state/createState",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"state",
+						"createState"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create organization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "orgDetails",
+							"value": "{\n    \"orgName\":\"pcc tech solution pvt. ltd\",\n    \"orgTypeCode\":\"CO0018\",\n    \"orgAbbreviation\":\"ABC\",\n    \"pinNo\":\"1254\",\n    \"serviceTaxNo\":\"ACV4587\",\n    \"licenseNo\":\"LIC45877\",\n    \"licenseCountry\":\"CO0001\",\n    \"licenseState\":\"ST0004\",\n    \"inaugurationDate\":\"2020-08-16\",\n    \"inaugurationCountry\":\"CO0001\",\n    \"inaugurationState\":\"ST0004\",\n    \"taxonomyCode\":\"ASCV\",\n    \"npi\":\"ASD\",\n    \"otherNpi\":\"SSSS\",\n    \"userName\":\"ttttt\",\n    \"password\":\"ttttt\",\n    \"organizationAddress\":{\n        \"country\":\"CO0001\",\n        \"column1\":\"Kolkata\",\n        \"column2\":\"Khardaha\",\n        \"column3\":\"Kokata\"\n    },\n    \"organizationContactDetails\":{\n        \"url\":\"www.google.com\",\n        \"phoneNo\":\"55555555\",\n        \"altrPhoneNo1\":\"4587478747\",\n        \"fax\":\"aaaa\",\n        \"contactPersonPrefix\":\"Mr.\",\n        \"contactPersonFirstName\":\"Saugata\",\n        \"contactPersonLastName\":\"Mitra\",\n        \"contactPersonPhone\":\"9858478747\",\n        \"contactPersonEmail\":\"test@test.com\"\n    }\n}",
+							"type": "text"
+						},
+						{
+							"key": "logo",
+							"type": "file",
+							"src": "/C:/Users/prase/Desktop/PIC.png"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/organization/createOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"createOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codeDesc\":\"Social Security Code\",\r\n    \"codeType\":\"addressProof\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/code/createCode",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"code",
+						"createCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create metadata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"location\",\r\n    \"countryCode\":\"CO0001\",\r\n    \"displayName\":\"State\",\r\n    \"fieldName\":\"state\",\r\n    \"idFieldType\":\"SELECT\",\r\n    \"internalName\":\"column3\",\r\n    \r\n    \"isMandatory\":\"1\",\r\n    \"sortOrder\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/metadata/createMetaData",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"metadata",
+						"createMetaData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Organization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/organization/getAllOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"getAllOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update organization",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orgName\":\"ABCc solution pvt. ltd\",\r\n    \"idParent\":\"\",\r\n    \"orgTypeCode\":\"CO0018\",\r\n    \"orgAbbreviation\":\"ABC\",\r\n    \"pinNo\":\"1254\",\r\n    \"serviceTaxNo\":\"ACV4587\",\r\n    \"licenseNo\":\"LIC45877\",\r\n    \"licenseCountry\":\"CO0001\",\r\n    \"licenseState\":\"ST0004\",\r\n    \"inaugurationDate\":\"2020-08-16\",\r\n    \"inaugurationCountry\":\"CO0001\",\r\n    \"inaugurationState\":\"ST0004\",\r\n    \"taxonomyCode\":\"ASCV\",\r\n    \"npi\":\"ASD\",\r\n    \"otherNpi\":\"SSSS\",\r\n    \"userName\":\"abc\",\r\n    \"password\":\"abc\",\r\n    \"organizationAddress\":{\r\n        \"country\":\"CO0001\",\r\n        \"column1\":\"Kolkata\",\r\n        \"column2\":\"Khardaha\",\r\n        \"column3\":\"Kokata\"\r\n    },\r\n    \"organizationContactDetails\":{\r\n        \"url\":\"www.google.com\",\r\n        \"phoneNo\":\"55555555\",\r\n        \"altrPhoneNo1\":\"4587478747\",\r\n        \"fax\":\"aaaa\",\r\n        \"contactPersonPrefix\":\"Mr.\",\r\n        \"contactPersonFirstName\":\"Saugata\",\r\n        \"contactPersonLastName\":\"Mitra\",\r\n        \"contactPersonPhone\":\"9858478747\",\r\n        \"contactPersonEmail\":\"test@test.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/organization/updateOrganization/OR0035",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"updateOrganization",
+						"OR0035"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all menu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/master/menu/getAllMenu/OR0035",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"menu",
+						"getAllMenu",
+						"OR0035"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create hierarchy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"organizaionCode\":\"OR0035\",\r\n    \"positionName\":\"CEO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/organization/createOrganizationHierarchy",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"createOrganizationHierarchy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get menu by role",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/master/accessRight/getRoleMenu/RO0023",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"accessRight",
+						"getRoleMenu",
+						"RO0023"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate user code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/generateUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"generateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "associateOrganization",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/associateOrganization?userId=1&organizaionId=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"associateOrganization"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						},
+						{
+							"key": "organizaionId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateOrganization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/organization/generateOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"generateOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAddressByLocality",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9097/address/getAddressByLocality?areaLocalityId=AREA_1002",
+					"host": [
+						"localhost"
+					],
+					"port": "9097",
+					"path": [
+						"address",
+						"getAddressByLocality"
+					],
+					"query": [
+						{
+							"key": "areaLocalityId",
+							"value": "AREA_1002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLocalityByPincode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9097/address/getLocalityByPincode?pincode=110001",
+					"host": [
+						"localhost"
+					],
+					"port": "9097",
+					"path": [
+						"address",
+						"getLocalityByPincode"
+					],
+					"query": [
+						{
+							"key": "pincode",
+							"value": "110001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getARoleMenu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/master/accessRight/getRoleMenu/RO0337",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"accessRight",
+						"getRoleMenu",
+						"RO0337"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get activity logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9096/authentication/getActivityLogs?fdate=2020-09-01&tdate=2020-09-08",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9096",
+					"path": [
+						"authentication",
+						"getActivityLogs"
+					],
+					"query": [
+						{
+							"key": "fdate",
+							"value": "2020-09-01"
+						},
+						{
+							"key": "tdate",
+							"value": "2020-09-08"
+						},
+						{
+							"key": "username",
+							"value": "Root_User",
+							"disabled": true
+						},
+						{
+							"key": "moduleName",
+							"value": "abcd",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "idLoginActivity",
+							"disabled": true
+						},
+						{
+							"key": "direction",
+							"value": "ASC",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOrganizationHierarchyByCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/organization/getOrganizationHierarchyByCode?orgCode=OR0289",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"getOrganizationHierarchyByCode"
+					],
+					"query": [
+						{
+							"key": "orgCode",
+							"value": "OR0289"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/getUserDetails?userCode=US0325",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"getUserDetails"
+					],
+					"query": [
+						{
+							"key": "userCode",
+							"value": "US0325"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeesByPosition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/organization/getEmployees/PO0551",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"organization",
+						"getEmployees",
+						"PO0551"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get state",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/master/state/getState/ST0005",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"state",
+						"getState",
+						"ST0005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete state",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/master/state/deleteState/ST0005",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"state",
+						"deleteState",
+						"ST0005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatestate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"stateID\": \"20208179214518GPKYBTAU60001\",\r\n        \"stateName\": \"Biharr\",\r\n        \"stateCode\": \"ST0005\",\r\n        \"countryCode\": \"CO0001\",\r\n        \"isActive\": 0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/master/state/updateState/ST0005",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"state",
+						"updateState",
+						"ST0005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCity",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJvcmdhbml6YXRpb25Db3VudHJ5IjoiQ08wMDAxIiwic3ViIjoic2F5YW50YTEyMyIsIm9yZ05hbWUiOiJTQkkgR2VuZXJhbCIsIm9yZ2NvZGUiOiJPUjAyODkiLCJpYXQiOjE1OTk2NDYwMjgsInVzZXJDb2RlIjoiVVMwNjI2IiwidXNlcm5hbWUiOiJzYXlhbnRhMTIzIn0.X2qBqaFamGo9k-si2drUb-PYQqhe7Ygun_feC93HZtA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/master/city/getAllCity",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"master",
+						"city",
+						"getAllCity"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,2 @@
+export const GET_MENU_LIST="GET_MENU_LIST"
+export const GET_NAV_MENU_LIST="GET_NAV_MENU_LIST"

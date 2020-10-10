@@ -1,0 +1,511 @@
+{
+  "statusCode": 0,
+  "message": "success",
+  "masterData": [
+    {
+      "menuId": "202082183232869PMT86AZID60001",
+      "menuName": "HR (Administrator)",
+      "iconName": "PeopleIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30034",
+          "menuName": "Dashboard",
+          "iconName": null,
+          "basePath": "/dashboard",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "2020821833377832TBWMZO5F20001",
+          "menuName": "User Details",
+          "iconName": null,
+          "basePath": "/user",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30001",
+          "menuName": "Organization Details",
+          "iconName": null,
+          "basePath": "/organisation",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "202082183410747YXZF2Y4ZT70001",
+          "menuName": "Role Details",
+          "iconName": null,
+          "basePath": "/role",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "202082183403677GDNJS8RPN0001",
+          "menuName": "Menu Details",
+          "iconName": null,
+          "basePath": "/menu",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "202082183421923P67J6QCWGG0001",
+          "menuName": "Access Rights",
+          "iconName": null,
+          "basePath": "/access-rights",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "202082183350517LXL0BGT9J20001",
+          "menuName": "Agent Details",
+          "iconName": null,
+          "basePath": "/agent-details",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "2020821834414961NN81ADBE70001",
+          "menuName": "Hierarchy",
+          "iconName": null,
+          "basePath": "/hierarchy",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30002",
+          "menuName": "User Activation",
+          "iconName": null,
+          "basePath": "/user-activation",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30020",
+          "menuName": "Reset Password",
+          "iconName": null,
+          "basePath": "/reset-password",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "2020821834324781K5ZIZABK50001",
+          "menuName": "Password Rule",
+          "iconName": null,
+          "basePath": "/password-rules",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30021",
+      "menuName": "HR (Reports)",
+      "iconName": "AssessmentIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30022",
+          "menuName": "Activity Log",
+          "iconName": null,
+          "basePath": "/activity-log",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30023",
+          "menuName": "Login Details",
+          "iconName": null,
+          "basePath": "/login-details",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30024",
+      "menuName": "Master Data Management",
+      "iconName": "AssistantIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30026",
+          "menuName": "State Master",
+          "iconName": null,
+          "basePath": "/state-master",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30025",
+          "menuName": "City master",
+          "iconName": null,
+          "basePath": "/city-master",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30055",
+          "menuName": "Code Master",
+          "iconName": "PeopleIcon",
+          "basePath": "/code-master",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30028",
+      "menuName": "Template Design",
+      "iconName": "AppsIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30029",
+          "menuName": "Contract Template",
+          "iconName": null,
+          "basePath": "/contract-template",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30030",
+      "menuName": "Fund Management",
+      "iconName": "AccountBalanceWalletIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30031",
+          "menuName": "Fund - Admin Fees",
+          "iconName": null,
+          "basePath": "/fund-fees",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30032",
+          "menuName": "Fund Account",
+          "iconName": null,
+          "basePath": "/fund-account",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30033",
+          "menuName": "Self Fund",
+          "iconName": null,
+          "basePath": "/self-fund",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30036",
+          "menuName": "Self-Fund Statement",
+          "iconName": null,
+          "basePath": "/self-fund-statement",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30037",
+      "menuName": "Group Management",
+      "iconName": "PeopleIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30038",
+          "menuName": "Group Management",
+          "iconName": null,
+          "basePath": "/group-management",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30039",
+      "menuName": "Provider Management",
+      "iconName": "AssistantIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30040",
+          "menuName": "Provider Registration",
+          "iconName": null,
+          "basePath": "/provider-registration",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30041",
+          "menuName": "Provider Categorization",
+          "iconName": null,
+          "basePath": "/provider-categorization",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30042",
+          "menuName": "Contract with Provider",
+          "iconName": null,
+          "basePath": "/provider-contract",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30043",
+          "menuName": "Provider Negotiation",
+          "iconName": null,
+          "basePath": "/provider-negotiation",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30044",
+          "menuName": "Provider Discount",
+          "iconName": null,
+          "basePath": "/provider-discount",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30045",
+          "menuName": "Configure Visit Fee",
+          "iconName": null,
+          "basePath": "/configure-visit-fee",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30046",
+          "menuName": "Provider Empanelment",
+          "iconName": null,
+          "basePath": "/provider-empanelment",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30047",
+          "menuName": "Capitated Provider",
+          "iconName": null,
+          "basePath": "/capitated-provider",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30048",
+          "menuName": "Blacklisted Provider",
+          "iconName": null,
+          "basePath": "/blacklisted-provider",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        },
+        {
+          "menuId": "20208218353816R3ZTHWN5U30049",
+          "menuName": "Proposer Provider Mapping",
+          "iconName": null,
+          "basePath": "/proposer-provider-mapping",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30050",
+      "menuName": "Receipt Management",
+      "iconName": "PeopleIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30051",
+          "menuName": "Receipt Details",
+          "iconName": null,
+          "basePath": "/receipt",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30050",
+      "menuName": "Invoice Management",
+      "iconName": "PeopleIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30051",
+          "menuName": "Invoice Details",
+          "iconName": null,
+          "basePath": "/invoice",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    },
+    {
+      "menuId": "20208218353816R3ZTHWN5U30050",
+      "menuName": "Tax Management",
+      "iconName": "PeopleIcon",
+      "basePath": null,
+      "canCreate": 1,
+      "canRead": 1,
+      "canUpdate": 1,
+      "canDelete": 1,
+      "childrens": [
+        {
+          "menuId": "20208218353816R3ZTHWN5U30051",
+          "menuName": "Tax Details",
+          "iconName": null,
+          "basePath": "/tax",
+          "canCreate": 1,
+          "canRead": 1,
+          "canUpdate": 1,
+          "canDelete": 1,
+          "childrens": null
+        }
+      ]
+    }
+  ]
+}
