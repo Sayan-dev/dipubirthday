@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dipubirthday/static/css/main.cafd0e6c.chunk.css",
+    "main.js": "/dipubirthday/static/js/main.695a695c.chunk.js",
+    "main.js.map": "/dipubirthday/static/js/main.695a695c.chunk.js.map",
+    "runtime-main.js": "/dipubirthday/static/js/runtime-main.41383060.js",
+    "runtime-main.js.map": "/dipubirthday/static/js/runtime-main.41383060.js.map",
+    "static/js/2.aed87ffa.chunk.js": "/dipubirthday/static/js/2.aed87ffa.chunk.js",
+    "static/js/2.aed87ffa.chunk.js.map": "/dipubirthday/static/js/2.aed87ffa.chunk.js.map",
+    "index.html": "/dipubirthday/index.html",
+    "precache-manifest.12c1e3be6a3476896fd1b08034a0ff98.js": "/dipubirthday/precache-manifest.12c1e3be6a3476896fd1b08034a0ff98.js",
+    "service-worker.js": "/dipubirthday/service-worker.js",
+    "static/css/main.cafd0e6c.chunk.css.map": "/dipubirthday/static/css/main.cafd0e6c.chunk.css.map",
+    "static/js/2.aed87ffa.chunk.js.LICENSE.txt": "/dipubirthday/static/js/2.aed87ffa.chunk.js.LICENSE.txt",
+    "static/media/404.svg": "/dipubirthday/static/media/404.04260f04.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41383060.js",
+    "static/js/2.aed87ffa.chunk.js",
+    "static/css/main.cafd0e6c.chunk.css",
+    "static/js/main.695a695c.chunk.js"
+  ]
+}
